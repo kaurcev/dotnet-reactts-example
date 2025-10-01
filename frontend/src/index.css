@@ -1,0 +1,113 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #000;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.app-header h1 {
+  margin: 0 0 10px 0;
+}
+
+.section {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.control-panel,
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.refresh-btn {
+  padding: 8px 16px;
+  border: 1px solid #007bff;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.refresh-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.time-card,
+.entry-card {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+}
+
+.time-display {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.entries-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.entry-card {
+  flex: 1 1 300px;
+  min-width: 250px;
+}
+
+.time-info {
+  margin: 10px 0;
+}
+
+.loading,
+.error {
+  padding: 10px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.loading {
+  background: #f0f0f0;
+}
+
+.error {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.status-bar {
+  margin-top: 20px;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  .entries-grid {
+    flex-direction: column;
+  }
+
+  .control-panel,
+  .section-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

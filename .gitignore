@@ -1,0 +1,102 @@
+# .NET Core (Backend)
+backend/bin/
+backend/obj/
+backend/publish/
+backend/*.nupkg
+backend/*.pdb
+backend/*.user
+backend/*.userosscache
+backend/*.sln.docstates
+backend/wwwroot/*
+
+# Build results
+backend/[Dd]ebug/
+backend/[Dd]ebugPublic/
+backend/[Rr]elease/
+backend/[Rr]eleases/
+backend/x64/
+backend/x86/
+backend/[Aa][Rr][Mm]/
+backend/[Aa][Rr][Mm]64/
+backend/bld/
+backend/[Oo]bj/
+backend/[Oo]ut/
+
+# Frontend (React)
+frontend/node_modules/
+frontend/.env
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.npm
+frontend/.node_repl_history
+
+# React build
+frontend/build/
+frontend/dist/
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.sln.iml
+*.user
+*.userprefs
+*.suo
+
+# OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs
+*.log
+logs/
+
+# NuGet
+.nuget/
+packages/
+
+# Database
+*.mdf
+*.ldf
+*.sdf
+App_Data/
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage/
+*.lcov
+.nyc_output
+
+# Temp files
+*.tmp
+*.temp
+*.local
+
+# Secrets (никогда не коммить!)
+appsettings.Development.json
+appsettings.Production.json
+secrets.json
+connectionstrings.config
+
+# Entity Framework
+Migrations/
+
+# VS Code
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+.history/
